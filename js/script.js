@@ -1,6 +1,10 @@
 "use strict";
 
-const isChecked = true,
-        isClose = false;
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-console.log(isChecked && isClose);
+const personalMovieDB = {
+        count: numberOfFilms,
+        movies:{},
+        actors: [],
+        privat: false
+};
